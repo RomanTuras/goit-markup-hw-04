@@ -290,6 +290,7 @@ section {
 
 .team-list {
   display: flex;
+  justify-content: center;
   gap: var(--col-indent);
 }
 
@@ -369,6 +370,9 @@ section {
 
 .portfolio-item {
   width: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
+  transition-duration: var(--anim-duration);
+  transition-timing-function: var(--anim-timing-function);
+  transition-property: box-shadow;
 }
 
 .card-container {
